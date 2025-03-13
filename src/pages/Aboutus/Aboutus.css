@@ -1,0 +1,200 @@
+.about-us-conatiner {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    padding: 20px;
+    flex-wrap: wrap;
+    /* Ensures content wraps on smaller screens */
+}
+
+@media (max-width: 600px) {
+    .about-us-conatiner {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+/* For Tablets (Portrait Mode) */
+@media (min-width: 601px) and (max-width: 900px) {
+    .about-us-conatiner {
+        width: 90%;
+        padding: 15px;
+    }
+}
+
+/* For Laptops */
+@media (min-width: 901px) and (max-width: 1200px) {
+    .about-us-conatiner{
+        width: 80%;
+        padding: 20px;
+    }
+}
+
+/* For Larger Screens */
+@media (min-width: 1201px) {
+    .about-us-conatiner {
+        width: 70%;
+        padding: 30px;
+    }
+}
+
+
+.about-us-text-content {
+    flex: 1;
+    min-width: 300px;
+    /* Ensures text doesn’t get too narrow */
+}
+
+.about-us-heading {
+    color: #4A90E2;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.about-us-description {
+    font-size: 20px;
+    line-height: 1.6;
+    width: 45%;
+}
+
+.image-content {
+    flex: 1;
+    max-width: 400px;
+    /* Prevents image from becoming too large */
+    width: 100%;
+    /* Ensures image scales properly */
+}
+
+.image-content img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        /* Stacks content vertically */
+        text-align: center;
+        /* Centers text for better appearance */
+    }
+
+    .image-content {
+        max-width: 100%;
+        /* Full width on small screens */
+    }
+}
+
+
+.about-us-text-content2 {
+    flex: 1;
+    min-width: 300px;
+    /* Ensures text doesn’t get too narrow */
+}
+
+.about-us-heading2 {
+    color: #4A90E2;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    position: absolute;
+        Left: 55rem;
+}
+
+.about-us-description2 {
+font-size: 20px;
+    line-height: 1.6;
+    width: 45%;
+    position:absolute;
+    Left:55rem;
+}
+
+
+.about-us-text-content3 {
+    flex: 1;
+    min-width: 300px;
+    /* Ensures text doesn’t get too narrow */
+}
+
+.about-us-heading3 {
+    color: #4A90E2;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    position:absolute;
+    top:100%;
+}
+
+.about-us-description3 {
+    font-size: 20px;
+    line-height: 1.6;
+    width: 45%;
+    position: absolute;
+        top: 110%;
+}
+
+
+.about-us-text-content4 {
+    flex: 1;
+    min-width: 300px;
+    /* Ensures text doesn’t get too narrow */
+}
+
+.about-us-heading4 {
+    color: #4A90E2;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    position: absolute;
+    Left: 55rem;
+    position: absolute;
+        top: 150%;
+}
+
+.about-us-description4 {
+    font-size: 20px;
+    line-height: 1.6;
+    width: 45%;
+    position: absolute;
+    Left: 55rem;
+    position: absolute;
+        top: 165%;
+}
+
+@media (max-width: 768px) {
+    .about-us-description4 {
+        flex-direction: column;
+        /* Stacks content vertically */
+        text-align: center;
+        /* Centers text for better appearance */
+    }
+
+    .about-us-description4 {
+        max-width: 100%;
+        /* Full width on small screens */
+    }
+}
+
+.about-us-text-content5 {
+    flex: 1;
+    min-width: 300px;
+    /* Ensures text doesn’t get too narrow */
+}
+
+.about-us-heading5 {
+    color: #4A90E2;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    position: absolute;
+        top: 200%;
+}
+
+.about-us-description5 {
+    font-size: 20px;
+    line-height: 1.6;
+    width: 45%;
+    position: absolute;
+        top: 210%;
+}

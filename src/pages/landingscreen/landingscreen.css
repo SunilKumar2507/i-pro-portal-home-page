@@ -1,0 +1,1488 @@
+/* General Container */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 1rem;
+}
+
+.nav-items{
+    color:white;
+}
+/* Insurance Image */
+.insurance-image {
+    position: absolute;
+        top: 14vw;
+        left: 29.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 60vw;
+    max-width: 670px;
+    max-height: 350px;
+    border-radius: 50%;
+    overflow: hidden;
+   
+    box-shadow: 0px 4px 20px #14457f;
+    margin-top: 2rem;
+}
+
+
+@media screen and (min-width: 1038px) and (max-width: 1350px) {
+    .insurance-image {
+        top: 14vw;
+        left: 29.5%;
+        width: 60vw;
+        max-width: 6700px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .insurance-image {
+        top: 14vw;
+        /* Adjust top position */
+        left: 34%;
+        /* Move slightly left */
+        width: 40vw;
+        /* Increase size */
+    }
+}
+
+@media screen and (max-width: 1504px) {
+    .insurance-image {
+        top: 14vw;
+        /* Adjust top position */
+        left: 34%;
+        /* Move slightly left */
+        width: 40vw;
+        /* Increase size */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .insurance-image {
+        position: relative;
+        /* Switch to relative for better flow */
+        top: auto;
+        left: auto;
+        width: 60vw;
+        margin: 2rem auto;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .insurance-image {
+        position: relative;
+        /* Switch to relative for better flow */
+        top: auto;
+        left: auto;
+        width: 90vw;
+        margin: 2rem auto;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .insurance-image {
+        width: 80vw;
+        max-width: 300px;
+        /* Prevent too large images */
+    }
+}
+
+.insurance-img {
+    width: 70%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Vehicle Images */
+.two-wheeler {
+    position: absolute;
+    top: 8vw;
+    left: 10%;
+    width: 25vw;
+    max-width: 400px;
+    height: auto;
+    margin: 1rem auto;
+    border-radius: 500px;
+}
+
+/* Responsive Fix for Smaller Screens */
+@media screen and (max-width: 1024px) {
+    .two-wheeler {
+        top: 10vw;
+        /* Adjust top position */
+        left: 5%;
+        /* Move slightly left */
+        width: 40vw;
+        /* Increase size */
+    }
+}
+@media screen and (max-width: 1504px) {
+    .two-wheeler {
+        top: 10vw;
+        /* Adjust top position */
+        left: 5%;
+        /* Move slightly left */
+        width: 40vw;
+        /* Increase size */
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .two-wheeler {
+        position: relative;
+        /* Switch to relative for better flow */
+        top: auto;
+        left: auto;
+        width: 60vw;
+        margin: 2rem auto;
+    }
+}
+
+@media screen and (min-width: 1038px) and (max-width: 1350px) {
+    .two-wheeler {
+        top: 9vw;
+        left: 8%;
+        width: 30vw;
+        max-width: 380px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .two-wheeler {
+        position: relative;
+        /* Switch to relative for better flow */
+        top: auto;
+        left: auto;
+        width: 90vw;
+        margin: 2rem auto;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .two-wheeler {
+        width: 80vw;
+        max-width: 300px;
+        /* Prevent too large images */
+    }
+}
+
+.car{
+    position: absolute;
+    top: 26vw;
+    left: 12%;
+    width: 20vw;
+    max-width: 400px;
+    height: auto;
+    margin: 1rem auto;
+    border-radius: 500px;
+}
+
+@media screen and (max-width: 1504px) {
+    .car {
+        top: 30vw;
+        /* Adjust top position */
+        left: 5%;
+        /* Move slightly left */
+        width: 40vw;
+        /* Increase size */
+    }
+}
+
+
+
+@media screen and (min-width: 1038px) and (max-width: 1350px) {
+    .car {
+        top: 28vw;
+        left: 10%;
+        width: 25vw;
+        max-width: 380px;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .car {
+        top: 10vw;
+        /* Adjust top position */
+        left: 5%;
+        /* Move slightly left */
+        width: 40vw;
+        /* Increase size */
+    }
+}
+@media screen and (max-width: 1024px) {
+    .car {
+        position: relative;
+        /* Switch to relative for better flow */
+        top: auto;
+        left: auto;
+        width: 90vw;
+        margin: 2rem auto;
+    }
+}
+@media screen and (max-width: 768px) {
+    .car {
+        position: relative;
+        /* Switch to relative for better flow */
+        top: auto;
+        left: auto;
+        width: 60vw;
+        margin: 2rem auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .car {
+        width: 80vw;
+        max-width: 300px;
+        /* Prevent too large images */
+    }
+}
+
+.vehicle-btn-car
+{
+    position: absolute;
+    top: 7.5vw;
+    left: 13%;
+    background-color: white;
+    border-color: #14457f;
+    /* Default color */
+    border-radius: 50px;
+    width: 10vw;
+    color:#14457f;
+    font:28px;
+    max-width: 400px;
+    height: 40px;
+    margin: 1rem auto;
+    font-weight:bolder;
+font-weight: bolder;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+    /* Slow blinking */
+}
+
+.vehicle-btn-bike {
+    position: absolute;
+    top: 7vw;
+    left: 13%;
+background-color: white;
+    border-color: #14457f;
+    border-radius: 50px;
+    width: 10vw;
+    color: white;
+    font: 28px;
+    max-width: 400px;
+    height: 40px;
+    margin: 1rem auto;
+    font-weight: bolder;
+    
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+}
+
+.vehicle-btn-bike{
+    position: absolute;
+        top: 10vw;
+        left: 13%;
+    background-color: white;
+        border-color: #14457f;
+        width: 10vw;
+        color:#14457f;
+        font: 28px;
+        max-width: 400px;
+        height: 40px;
+        margin: 1rem auto;
+        font-weight: bolder;
+        font-weight: bolder;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+}
+
+.vehicle-btn-cv{
+    position: absolute;
+        top: 12vw;
+        left: 13%;
+        background-color: white;
+            border-color: #14457f;
+        border-radius: 50px;
+        width: 10vw;
+        color:#14457f;
+        font: 28px;
+        max-width: 400px;
+        height: 40px;
+        margin: 1rem auto;
+        font-weight: bolder;
+        font-weight: bolder;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+}
+
+.vehicle-btn-health{
+    position: absolute;
+        top: 8vw;
+        left: 13%;
+        background-color: white;
+        border-radius: 50px;
+        border-color: #14457f;
+        width: 10vw;
+        color:#14457f;
+        font: 28px;
+        max-width: 400px;
+        height: 40px;
+        margin: 1rem auto;
+        font-weight: bolder;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+            /* Soft shadow for better visibility */
+            transition: box-shadow 0.3s ease-in-out;
+        
+        
+       
+}
+/* Keyframes for slow blinking effect */
+@keyframes slow-blink {
+    0% {
+        background-color: #14457f;
+        /* Default dark blue */
+        box-shadow: 0 0 5px #14457f;
+    }
+
+    50% {
+        background-color: gold;
+        /* Gold color blink */
+        box-shadow: 0 0 20px gold;
+    }
+
+    100% {
+        background-color: #14457f;
+        /* Back to default */
+        box-shadow: 0 0 5px #14457f;
+    }
+}
+
+/* Optional hover effect */
+.vehicle-btn-car:hover {
+    transform: scale(1.05);
+    color:green;
+}
+.school-vehicle {
+    position: absolute;
+        top: 21.5vw;
+        left: 75%;
+        width: 25vw;
+        max-width: 400px;
+        height: auto;
+        margin: 1rem auto;
+        border-radius: 1000px;
+}
+@media screen and (max-width: 1504px) {
+    .school-vehicle {
+        top: 25vw;
+        /* Adjust top position */
+        left: 78%;
+        /* Move slightly left */
+        width: 40vw;
+        /* Increase size */
+    }
+}
+
+@media screen and (min-width: 1038px) and (max-width: 1350px) {
+    .school-vehicle {
+        top: 23vw;
+        left: 78%;
+        width: 30vw;
+        max-width: 380px;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .school-vehicle {
+        top: 10vw;
+        /* Adjust top position */
+        left: 5%;
+        /* Move slightly left */
+        width: 40vw;
+        /* Increase size */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .school-vehicle {
+        position: relative;
+        /* Switch to relative for better flow */
+        top: auto;
+        left: auto;
+        width: 60vw;
+        margin: 2rem auto;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .school-vehicle {
+        position: relative;
+        /* Switch to relative for better flow */
+        top: auto;
+        left: auto;
+        width: 90vw;
+        margin: 2rem auto;
+    }
+}
+@media screen and (max-width: 480px) {
+    .school-vehicle {
+        width: 80vw;
+        max-width: 300px;
+        /* Prevent too large images */
+    }
+}
+
+.doctors{
+position: absolute;
+    top: 10vw;
+    left: 77%;
+    width: 15vw;
+    max-width: 250px;
+    height: auto;
+    margin: 1rem auto;
+    border-radius: 500px;
+}
+
+@media screen and (max-width: 1504px) {
+    .doctors{
+        top: 12vw;
+        /* Adjust top position */
+        left: 82%;
+        /* Move slightly left */
+        width: 40vw;
+        /* Increase size */
+    }
+}
+
+@media screen and (min-width: 1038px) and (max-width: 1350px) {
+    .doctors {
+        top: 12vw;
+        left: 78%;
+        width: 25vw;
+        max-width: 380px;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .doctors {
+        top: 10vw;
+        /* Adjust top position */
+        left: 5%;
+        /* Move slightly left */
+        width: 40vw;
+        /* Increase size */
+    }
+}
+@media screen and (max-width: 1024px) {
+    .doctors {
+        position: relative;
+        /* Switch to relative for better flow */
+        top: auto;
+        left: auto;
+        width: 90vw;
+        margin: 2rem auto;
+    }
+}
+@media screen and (max-width: 768px) {
+    .doctors {
+        position: relative;
+        /* Switch to relative for better flow */
+        top: auto;
+        left: auto;
+        width: 60vw;
+        margin: 2rem auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .doctors {
+        width: 80vw;
+        max-width: 300px;
+        /* Prevent too large images */
+    }
+}
+
+
+
+
+.twowheeler-img,
+.car-img,
+.school-vehicle-img,
+.doctors-img {
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Text Styles */
+.text2 {
+    position: absolute;
+    top:42vw;
+    font-size: 2vw;
+    text-align: center;
+    font-weight: bold;
+    color: black;
+}
+@media screen and (max-width: 1504px) {
+    .text2 {
+        top: 42vw;
+        /* Adjust top position */
+        left: 33%;
+        /* Move slightly left */
+        width: 40vw;
+        /* Increase size */
+    }
+}
+
+@media screen and (min-width: 1038px) and (max-width: 1350px) {
+    .text2 {
+        top: 48vw;
+        left: 42%;
+        width: 25vw;
+        max-width: 380px;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .text2 {
+        top: 44vw;
+        /* Adjust top position */
+        left: 5%;
+        /* Move slightly left */
+        width: 40vw;
+        /* Increase size */
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .text2 {
+        position: relative;
+        /* Switch to relative for better flow */
+        top: auto;
+        left: auto;
+        width: 90vw;
+        margin: 2rem auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .text2 {
+        position: relative;
+        /* Switch to relative for better flow */
+        top: auto;
+        left: auto;
+        width: 60vw;
+        margin: 2rem auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .text2 {
+        width: 80vw;
+        max-width: 300px;
+        /* Prevent too large images */
+    }
+}
+
+
+
+.text3
+{
+    position: absolute;
+    top: 44vw;
+    font-size: 1.2vw;
+    text-align: center;
+    max-width: 90%;
+    margin: 1rem auto;
+}
+
+
+@media screen and (max-width: 1504px) {
+    .text3 {
+        top: 50vw;
+        /* Adjust top position */
+        left: 5%;
+        /* Move slightly left */
+        width: 100vw;
+        /* Increase size */
+    }
+}
+@media screen and (max-width: 1024px) {
+    .text3 {
+        position: relative;
+        /* Switch to relative for better flow */
+        top: auto;
+        left: auto;
+        width: 90vw;
+        margin: 2rem auto;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .text3 {
+        top: 1vw;
+        /* Adjust top position */
+        left: 1%;
+        /* Move slightly left */
+        width: 40vw;
+        /* Increase size */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .text3 {
+        position: relative;
+        /* Switch to relative for better flow */
+        top: auto;
+        left: auto;
+        width: 60vw;
+        margin: 2rem auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .text3 {
+        width: 80vw;
+        max-width: 300px;
+        /* Prevent too large images */
+    }
+}
+.bold1{
+    position: absolute;
+        top: 48vw;
+        left:25%
+}
+
+@media screen and (max-width: 1504px) {
+    .bold1 {
+        top: 48vw;
+        /* Adjust top position */
+        left: 5%;
+        /* Move slightly left */
+        width: 100vw;
+        /* Increase size */
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .bold1 {
+        position: relative;
+        /* Switch to relative for better flow */
+        top: auto;
+        left: auto;
+        width: 90vw;
+        margin: 2rem auto;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .bold1 {
+        top: 10vw;
+        /* Adjust top position */
+        left: 25%;
+        /* Move slightly left */
+        width: 40vw;
+        /* Increase size */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .bold1 {
+        position: relative;
+        /* Switch to relative for better flow */
+        top: auto;
+        left: auto;
+        width: 60vw;
+        margin: 2rem auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .bold1 {
+        width: 80vw;
+        max-width: 300px;
+        /* Prevent too large images */
+    }
+}
+.bold2 {
+    position: absolute;
+    top: 48vw;
+    left: 70%
+}
+@media screen and (max-width: 1504px) {
+    .bold2 {
+        top: 48vw;
+        /* Adjust top position */
+        left: 70%;
+        /* Move slightly left */
+        width: 100vw;
+        /* Increase size */
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .bold2 {
+        position: relative;
+        /* Switch to relative for better flow */
+        top: auto;
+        left: auto;
+        width: 90vw;
+        margin: 2rem auto;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .bold2 {
+        top: 10vw;
+        /* Adjust top position */
+        left: 5%;
+        /* Move slightly left */
+        width: 40vw;
+        /* Increase size */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .bold2 {
+        position: relative;
+        /* Switch to relative for better flow */
+        top: auto;
+        left: auto;
+        width: 60vw;
+        margin: 2rem auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .bold2 {
+        width: 80vw;
+        max-width: 300px;
+        /* Prevent too large images */
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .text2 {
+        font-size: 2rem;
+    }
+
+    .text3
+
+    {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .text2 {
+        font-size: 1.5rem;
+    }
+
+    .text3
+    {
+        font-size: 0.9rem;
+    }
+
+    .insurance-image,
+    .two-wheeler,
+    .car,
+    .school-vehicle {
+        width: 80%;
+    }
+}
+
+
+/* Background Section */
+.background-color {
+    position: absolute;
+    top: 52rem;
+    background-color: #FCE77D;
+    width: 100%;
+}
+
+@media screen and (max-width: 1504px) {
+    .background-color {
+        top: 58vw;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .background-color {
+        position: relative;
+        top: auto;
+        left: auto;
+        width: 90%;
+        margin: 2rem auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .background-color {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .background-color {
+        width: 90%;
+        max-width: 300px;
+    }
+}
+
+/* Landing Section */
+.landing-container {
+    position: relative;
+    /* Change from absolute to relative */
+    top: 88vw;
+    /* Remove fixed top positioning */
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+@media screen and (max-width: 1504px) {
+    .landing-container {
+        top: 92vw;
+    }
+}
+
+@media screen and (min-width: 1038px) and (max-width: 1350px) {
+    .landing-container {
+        position: relative;
+        /* Ensure natural placement */
+        left: 2%;
+        /* Remove left offset */
+        width: 50%;
+        /* Keep it within the container */
+        margin: auto;
+        top:20vw;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .landing-container {
+        position: relative;
+        top: auto;
+        left: auto;
+        width: 90%;
+        margin: 2rem auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .landing-container {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .landing-container {
+        width: 90%;
+        max-width: 300px;
+    }
+}
+
+
+
+/* Heading Section */
+.heading {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1504px) {
+    .heading {
+        top: 85vw;
+    }
+}
+
+@media screen and (min-width: 1038px) and (max-width: 1350px) {
+    .heading {
+        position: relative;
+        /* Ensure natural placement */
+        left: 0%;
+        /* Remove left offset */
+        width: 100%;
+        /* Keep it within the container */
+        margin: auto;
+        top: 95vw;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .heading {
+        position: relative;
+        top: -5vw;
+        left: auto;
+        width: 90%;
+        margin: 2rem auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .heading {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .heading {
+        width: 90%;
+        max-width: 300px;
+    }
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* 4 columns */
+    gap: 20px;
+    justify-content: center;
+    padding: 10px;
+    width: 90%;
+    margin: auto;
+}
+
+/* Medium screens (max-width: 1350px) */
+@media screen and (max-width: 1350px) {
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+        margin-top: 96vw;
+        /* 3 columns */
+    }
+}
+
+/* Tablets (max-width 1024px) */
+@media screen and (max-width: 1024px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: -4vw;
+        /* 2 columns */
+    }
+}
+
+/* Mobile screens (max-width 768px) */
+@media screen and (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(1, 1fr);
+        /* 1 column */
+        width: 80%;
+        margin-top: 1vw;
+    }
+}
+
+/* Small mobile screens (max-width 480px) */
+@media screen and (max-width: 480px) {
+    .grid-container {
+        width: 90%;
+        max-width: 320px;
+    }
+}
+
+.offer-card {
+    width: 300px;
+    /* Adjust width based on your preference */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    text-align: left;
+    flex-shrink: 0;
+    /* Prevent shrinking */
+}
+
+
+.offer-card.highlight {
+    background: #e0f7fa;
+    /* Light blue background */
+}
+
+.offer-card.claims {
+    background: #2196f3;
+    color: white;
+}
+
+.offer-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.offer-card ul {
+    padding-left: 20px;
+}
+
+.offer-card ul li {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+
+
+
+.articles-container {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    margin-top: 115%;
+    /* Instead of top: 270% */
+}
+@media screen and (max-width: 1550px) {
+    .articles-container {
+        grid-template-columns: repeat(3, 1fr);
+        margin-top: 115%;
+        margin-left: 6%;
+    }
+}
+@media screen and (max-width: 1350px) {
+    .articles-container {
+        grid-template-columns: repeat(3, 1fr);
+        margin-top: 18vw;
+        margin-left: 6%;
+    }
+}
+
+/* Tablets (max-width 1024px) */
+@media screen and (max-width: 1024px) {
+    .articles-container {
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 5vw;
+        margin-left: 6%;
+    }
+}
+
+/* Mobile screens (max-width 768px) */
+@media screen and (max-width: 768px) {
+    .articles-container {
+        grid-template-columns: repeat(1, 1fr);
+        width: 90%;
+        margin: 2vw auto;
+        margin-left: 6%;
+    }
+}
+
+/* Small mobile screens (max-width 480px) */
+@media screen and (max-width: 495px) {
+    .articles-container {
+        width: 95%;
+        max-width: 320px;
+        margin-left: 20%;
+    }
+}
+.i-pro-infinity {
+    font-size: 40px;
+    /* Adjust size as needed */
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.curved-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    position: relative;
+    /* Ensure proper positioning */
+}
+
+@media screen and (min-width: 1038px) and (max-width: 1350px) {
+    .curved-text {
+        position: absolute;
+        top: 2vw;
+        left: 53%;
+        transform: translateX(-50%);
+        /* Center the text properly */
+        width: auto;
+        max-width: 680px;
+    }
+}
+
+/* Small mobile screens (max-width 480px) */
+
+/* Ensuring SVG scales properly */
+.curved-text svg {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+.article-card {
+    
+    width: 400px;
+    height:450px;
+    background: #ffffff;
+    border: 2px solid #1e3a8a;
+    /* Border color */
+    border-radius: 10px;
+    padding: 20px;
+    text-align: left;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.image-placeholder {
+    width: 100%;
+    height: 150px;
+    /* Adjust height as per requirement */
+   
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.content h3 {
+    background: #1e3a8a;
+    /* Background color for heading */
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: left;
+}
+
+.content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.content ul li {
+    font-size: 14px;
+    padding-left: 20px;
+    position: relative;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.content ul li::before {
+    content: "■";
+    color: #1e3a8a;
+    /* Bullet color */
+    position: absolute;
+    left: 0;
+    font-size: 12px;
+    top: 4px;
+}
+
+
+.insurance-container-landingpage {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: #1e4dab;
+    padding: 30px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 1600px;
+    margin: 20px auto;
+}
+
+.logo-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.insurance-logo {
+    max-width: 150px;
+    height: auto;
+}
+@media screen and (max-width: 1550px) {
+    .insurance-container-landingpage {
+        max-width: 200%;
+        padding: 28px;
+        gap: 18px;
+    }
+
+    .insurance-logo {
+        max-width: 150px;
+    }
+}
+
+/* Medium-Large Screens (1024px - 1350px) */
+@media screen and (max-width: 1350px) {
+    .insurance-container-landingpage {
+        max-width: 90%;
+        padding: 25px;
+        gap: 16px;
+    }
+
+    .insurance-logo {
+        max-width: 140px;
+    }
+}
+
+/* Tablets (max-width: 1024px) */
+@media screen and (max-width: 1024px) {
+    .insurance-container-landingpage {
+        max-width: 85%;
+        padding: 20px;
+        gap: 14px;
+    }
+
+    .insurance-logo {
+        max-width: 120px;
+    }
+}
+
+/* Small screens (Mobile) */
+@media screen and (max-width: 768px) {
+    .insurance-container-landingpage {
+        flex-direction: column;
+        padding: 15px;
+        gap: 12px;
+    }
+
+    .insurance-logo {
+        max-width: 100px;
+    }
+}
+
+/* Extra small screens */
+@media screen and (max-width: 480px) {
+    .insurance-container-landingpage {
+        width: 95%;
+        max-width: 320px;
+        padding: 10px;
+    }
+
+    .insurance-logo {
+        max-width: 80px;
+    }
+}
+
+/* .insurance-container-landingpage {
+    position: absolute;
+    top:405%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    background-color: #1e4dab;
+    padding: 30px;
+    border-radius: 12px;
+    width:100;
+} */
+
+
+.landingimage1{
+    width:60%;
+    margin-left: 20%;
+}
+
+.landingimage2{
+    width: 40%;
+    margin-left: 25%;
+}
+
+/* .logo-box {
+    
+    border-radius: 8px;
+    width: 150px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+} */
+
+.insurance-logo {
+    max-width: 100%;
+    max-height: 80px;
+    object-fit: contain;
+}
+
+.testimonials-container {
+    position: absolute;
+    width:100%;
+    top:380%;
+    text-align: center;
+   
+    padding: 50px 20px;
+}
+
+div h2 {
+    color: #1A36C1;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+div p {
+    color: #000;
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+.testimonials {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    
+}
+
+.card {
+    background-color: #F0F9FF;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.security{
+    width:30%;
+    margin-left: 25%;
+}
+
+.image-circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 0 auto 10px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-circle img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+}
+
+.yellow-bg {
+    background-color: #FFD54F;
+}
+
+.grey-bg {
+    background-color: #BDBDBD;
+}
+
+.blue-bg {
+    background-color: #42A5F5;
+}
+
+h3 {
+    font-weight: bold;
+    margin: 10px 0;
+}
+@media screen and (max-width: 1550px) {
+    .testimonials {
+        gap: 15px;
+        top: 10%;
+    }
+.testimonials-container {
+    top: 185vw;
+}
+    .card {
+        width: 280px;
+        padding: 15px;
+       
+    }
+}
+
+@media screen and (min-width: 1038px) and (max-width: 1350px) {
+    .testimonials {
+        flex-wrap: wrap;
+        justify-content: center;
+        top: 260%;
+    }
+
+    .testimonials-container{
+        top:225vw;
+    }
+
+    .card {
+        width: 260px;
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .testimonials {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .testimonials-container {
+    top: 500vw;
+    }
+    .card {
+        width: 250px;
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .testimonials {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .testimonials-container {
+        padding: 30px 10px;
+    }
+
+    .card {
+        width: 90%;
+        padding: 15px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    div p {
+        font-size: 14px;
+    }
+}
+.help-container {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 999;
+}
+
+.help-button {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: #fff;
+    border: 2px solid #d35400;
+    border-radius: 50px;
+    padding: 10px 15px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.help-button img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #d35400;
+}
+
+.help-button p {
+    color: #d35400;
+    font-weight: bold;
+    margin: 0;
+}
