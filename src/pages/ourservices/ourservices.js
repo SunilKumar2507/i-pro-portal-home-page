@@ -43,7 +43,7 @@ const OurServices = () => {
     ];
     return (
         
-        <div className="services-container">
+        <div className="services-containers">
         <Header/>
             <div className="services-content">
                 <h2 className="services-title">Our Services</h2>
@@ -80,13 +80,15 @@ const OurServices = () => {
             </p>
               <br></br>
             <br></br>
-            <p className="highlighted-text2-content">At i-Pro  Insurance, we understand that your personal life is filled with unique and valuable assets that deserve the best protection. Our comprehensive personal insurance solutions are designed to safeguard your home, vehicle, health, and financial well-being, ensuring you can enjoy peace of mind in every aspect of your life.</p>
+            <p className="highlighted-text2-contents">At i-Pro  Insurance, we understand that your personal life is filled with unique and valuable assets that deserve the best protection. Our comprehensive personal insurance solutions are designed to safeguard your home, vehicle, health, and financial well-being, ensuring you can enjoy peace of mind in every aspect of your life.</p>
+           
+           
             <p className="highlighted-text3">
                 Corporate Insurance
             </p>
             <p className="highlighted-text3-content">At i-Pro Insurance, we understand the complexities and risks associated with running a business. Our comprehensive corporate insurance solutions are designed to protect your company’s assets, employees,
                 and operations, allowing you to focus on growth and success. Whether you’re a small business or a large corporation, we offer tailored insurance packages to meet your specific needs.</p>
-            <div className="services-image3">
+            <div className="services-image33">
                 <img src={customerinterview} alt="Insurance Expert" />
             </div>
 
@@ -95,9 +97,7 @@ const OurServices = () => {
             </p>
 
             <p className="highlighted-text4-content">The world of insurance is complex and everchanging. The insurance covers provided by the policy you bought last year may no longer be suitable or sufficient for your needs. You may not know that the quoted premiums are competitive? And if you are just starting out or expanding your business, how do you know what types of insurance you need? And if the insurance you buy is good enough to protect your business against the risk exposures? A well experienced and suitably qualified professional can help assess and source the types and levels of cover that you need, saving you the trouble and effort. The consequences of not having the right insurance in place can be disastrous, and sometimes this only comes to light when you need to make a claim, which might be too late.</p>
-            <div className="services-image4">
-                <img src={businessmeeting} alt="Insurance Expert" />
-            </div>
+            
         
             <div className="business-container">
                 <h2 className="business-title">WE UNDERSTAND YOUR BUSINESS</h2>

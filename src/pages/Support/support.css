@@ -5,7 +5,7 @@
     background-color: #FFFFFF;
 }
 
-.contact-header {
+.contact-headers {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -19,7 +19,14 @@
 }
 
 .contact-form {
-    width: 55%;
+    width: 50%;
+}
+
+@media (max-width: 1240px) {
+    .contact-form {
+        width: 45%;
+        margin-left: 5%;
+    }
 }
 
 .contact-form h2 {
@@ -91,7 +98,7 @@ width: 50%;
 
 /* Responsive Design */
 @media (max-width: 1024px) {
-    .contact-header {
+    .contact-headers {
         flex-direction: column;
     }
 
@@ -105,6 +112,13 @@ width: 50%;
         margin-bottom: 20px;
     }
 }
+
+@media (max-width: 1240px){
+    .contact-img {
+        width:40%
+    }
+}
+
 
 @media (max-width: 768px) {
     .contact-form h2 {
@@ -124,6 +138,12 @@ width: 50%;
     padding: 20px;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
+}
+
+@media (max-width: 1240px) {
+    .faq-container {
+        width: 85%
+    }
 }
 
 h2 {

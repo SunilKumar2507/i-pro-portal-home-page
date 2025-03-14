@@ -1,200 +1,351 @@
-.about-us-conatiner {
-    display: flex;
-    gap: 40px;
-    align-items: center;
-    padding: 20px;
-    flex-wrap: wrap;
-    /* Ensures content wraps on smaller screens */
-}
-
-@media (max-width: 600px) {
-    .about-us-conatiner {
-        width: 100%;
-        padding: 10px;
-    }
-}
-
-/* For Tablets (Portrait Mode) */
-@media (min-width: 601px) and (max-width: 900px) {
-    .about-us-conatiner {
-        width: 90%;
-        padding: 15px;
-    }
-}
-
-/* For Laptops */
-@media (min-width: 901px) and (max-width: 1200px) {
-    .about-us-conatiner{
-        width: 80%;
-        padding: 20px;
-    }
-}
-
-/* For Larger Screens */
-@media (min-width: 1201px) {
-    .about-us-conatiner {
-        width: 70%;
-        padding: 30px;
-    }
-}
-
-
 .about-us-text-content {
-    flex: 1;
-    min-width: 300px;
-    /* Ensures text doesn’t get too narrow */
+    width: 45%;
+    text-align: left;
+    margin-top: 4vw;
+    padding: 20px;
+    background-color: #f8f9fa;
+    color: #333;
 }
 
 .about-us-heading {
-    color: #4A90E2;
-    font-size: 28px;
+    font-size: 26px;
     font-weight: bold;
-    margin-bottom: 10px;
+    color: blue;
 }
 
 .about-us-description {
     font-size: 20px;
-    line-height: 1.6;
-    width: 45%;
+    line-height: 1.5;
 }
 
-.image-content {
-    flex: 1;
-    max-width: 400px;
-    /* Prevents image from becoming too large */
-    width: 100%;
-    /* Ensures image scales properly */
+/* Default positioning */
+.about-us-text-content {
+    position: relative;
+    left: 0;
 }
 
-.image-content img {
-    width: 100%;
-    border-radius: 10px;
+/* Responsive Design */
+@media (min-width: 1200px) {
+
+    /* Large Laptops & Desktops */
+    .about-us-text-content {
+        max-width: 50%;
+    }
 }
 
-/* Media query for smaller screens */
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-        /* Stacks content vertically */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    /* Small Laptops & Tablets (Landscape) */
+    .about-us-text-content {
+        max-width: 55%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    /* Tablets (Portrait) & Small Laptops */
+    .about-us-text-content {
+        max-width: 65%;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+
+    /* Mobile (Landscape) */
+    .about-us-text-content {
+        max-width: 80%;
+    }
+}
+
+@media (max-width: 575px) {
+
+    /* Mobile (Portrait) */
+    .about-us-text-content {
+        max-width: 90%;
         text-align: center;
-        /* Centers text for better appearance */
-    }
-
-    .image-content {
-        max-width: 100%;
-        /* Full width on small screens */
+        /* Center align text on small screens */
     }
 }
-
 
 .about-us-text-content2 {
-    flex: 1;
-    min-width: 300px;
-    /* Ensures text doesn’t get too narrow */
+    position: absolute;
+    right: 7%;
+    /* Position on the right side */
+    width: 45%;
+    /* Adjust width for readability */
+    text-align: left;
+    padding: 20px;
+    background-color: #f8f9fa;
+    /* Light background for better contrast */
+    border-radius: 8px;
 }
 
-.about-us-heading2 {
-    color: #4A90E2;
-    font-size: 28px;
-    font-weight: bold;
-    margin-bottom: 10px;
-    position: absolute;
-        Left: 55rem;
+.about-us-heading2{
+    font-size: 26px;
+        font-weight: bold;
+        color: blue;
 }
 
 .about-us-description2 {
-font-size: 20px;
-    line-height: 1.6;
-    width: 45%;
-    position:absolute;
-    Left:55rem;
+    font-size: 20px;
+    line-height: 1.5;
+}
+/* Large Laptops & Desktops (1200px and above) */
+@media (min-width: 1200px) {
+    .about-us-text-content2 {
+        width: 35%;
+    }
+}
+
+/* Small Laptops & Tablets (Landscape) (992px - 1199px) */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .about-us-text-content2 {
+        width: 40%;
+        right: 3%;
+    }
+}
+
+/* Tablets (Portrait) & Small Laptops (768px - 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .about-us-text-content2 {
+        width: 50%;
+        right: 2%;
+    }
+}
+
+/* Mobile (Landscape) (576px - 767px) */
+@media (min-width: 576px) and (max-width: 767px) {
+    .about-us-text-content2 {
+        width: 60%;
+        right: 1%;
+        font-size: 14px;
+    }
+}
+
+/* Mobile (Portrait) (≤ 575px) */
+@media (max-width: 575px) {
+    .about-us-text-content2 {
+        width: 90%;
+        right: auto;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 12px;
+        text-align: center;
+    }
 }
 
 
 .about-us-text-content3 {
-    flex: 1;
-    min-width: 300px;
-    /* Ensures text doesn’t get too narrow */
+    width: 45%;
+        text-align: left;
+        margin-top: 20vw;
+        padding: 20px;
+        background-color: #f8f9fa;
+        color: #333;
+
+    /* Ensures it's below content2 */
 }
 
-.about-us-heading3 {
-    color: #4A90E2;
-    font-size: 28px;
-    font-weight: bold;
-    margin-bottom: 10px;
-    position:absolute;
-    top:100%;
+.about-us-heading3{
+    font-size: 26px;
+        font-weight: bold;
+        color: blue;
 }
 
 .about-us-description3 {
     font-size: 20px;
-    line-height: 1.6;
-    width: 45%;
-    position: absolute;
-        top: 110%;
+    line-height: 1.5;
+}
+/* Large Laptops & Desktops (≥1200px) */
+@media (min-width: 1200px) {
+    .about-us-text-content3 {
+        width: 35%;
+        top: 450px;
+        /* Adjust vertical position */
+    }
+}
+
+/* Small Laptops & Tablets (Landscape) (992px - 1199px) */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .about-us-text-content3 {
+        width: 40%;
+        left: 3%;
+        top: 500px;
+    }
+}
+
+/* Tablets (Portrait) & Small Laptops (768px - 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .about-us-text-content3 {
+        width: 50%;
+        left: 2%;
+        top: 550px;
+    }
+}
+
+/* Mobile (Landscape) (576px - 767px) */
+@media (min-width: 576px) and (max-width: 767px) {
+    .about-us-text-content3 {
+        width: 60%;
+        left: 1%;
+        top: 600px;
+        font-size: 14px;
+    }
+}
+
+/* Mobile (Portrait) (≤ 575px) */
+@media (max-width: 575px) {
+    .about-us-text-content3 {
+        width: 90%;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        font-size: 12px;
+        position: relative;
+        margin-top: 20px;
+        /* Adds space when stacked */
+    }
 }
 
 
 .about-us-text-content4 {
-    flex: 1;
-    min-width: 300px;
-    /* Ensures text doesn’t get too narrow */
+    position: absolute;
+    right: 5%;
+    /* Position on the right side */
+    width: 45%;
+    /* Adjust width for readability */
+    text-align: left;
+    padding: 20px;
+    background-color: #f8f9fa;
+    /* Light background for better contrast */
+    border-radius: 8px;
 }
 
 .about-us-heading4 {
-    color: #4A90E2;
-    font-size: 28px;
+    font-size: 26px;
     font-weight: bold;
-    margin-bottom: 10px;
-    position: absolute;
-    Left: 55rem;
-    position: absolute;
-        top: 150%;
+    color: blue;
 }
 
 .about-us-description4 {
     font-size: 20px;
-    line-height: 1.6;
-    width: 45%;
-    position: absolute;
-    Left: 55rem;
-    position: absolute;
-        top: 165%;
+    line-height: 1.5;
 }
 
-@media (max-width: 768px) {
-    .about-us-description4 {
-        flex-direction: column;
-        /* Stacks content vertically */
+/* Large Laptops & Desktops (1200px and above) */
+@media (min-width: 1200px) {
+    .about-us-text-content4 {
+        width: 35%;
+    }
+}
+
+/* Small Laptops & Tablets (Landscape) (992px - 1199px) */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .about-us-text-content4 {
+        width: 40%;
+        right: 3%;
+    }
+}
+
+/* Tablets (Portrait) & Small Laptops (768px - 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .about-us-text-content4 {
+        width: 50%;
+        right: 2%;
+    }
+}
+
+/* Mobile (Landscape) (576px - 767px) */
+@media (min-width: 576px) and (max-width: 767px) {
+    .about-us-text-content4 {
+        width: 60%;
+        right: 1%;
+        font-size: 14px;
+    }
+}
+
+/* Mobile (Portrait) (≤ 575px) */
+@media (max-width: 575px) {
+    .about-us-text-content4 {
+        width: 90%;
+        right: auto;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 12px;
         text-align: center;
-        /* Centers text for better appearance */
-    }
-
-    .about-us-description4 {
-        max-width: 100%;
-        /* Full width on small screens */
     }
 }
+
 
 .about-us-text-content5 {
-    flex: 1;
-    min-width: 300px;
-    /* Ensures text doesn’t get too narrow */
+    width: 45%;
+    text-align: left;
+    margin-top: 25vw;
+    padding: 20px;
+    background-color: #f8f9fa;
+    color: #333;
+
+    /* Ensures it's below content2 */
 }
 
 .about-us-heading5 {
-    color: #4A90E2;
-    font-size: 28px;
+    font-size: 26px;
     font-weight: bold;
-    margin-bottom: 10px;
-    position: absolute;
-        top: 200%;
+    color: blue;
 }
 
 .about-us-description5 {
     font-size: 20px;
-    line-height: 1.6;
-    width: 45%;
-    position: absolute;
-        top: 210%;
+    line-height: 1.5;
+}
+
+/* Large Laptops & Desktops (≥1200px) */
+@media (min-width: 1200px) {
+    .about-us-text-content5 {
+        width: 35%;
+        top: 450px;
+        /* Adjust vertical position */
+    }
+}
+
+/* Small Laptops & Tablets (Landscape) (992px - 1199px) */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .about-us-text-content5 {
+        width: 40%;
+        left: 3%;
+        top: 500px;
+    }
+}
+
+/* Tablets (Portrait) & Small Laptops (768px - 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .about-us-text-content5 {
+        width: 50%;
+        left: 2%;
+        top: 550px;
+    }
+}
+
+/* Mobile (Landscape) (576px - 767px) */
+@media (min-width: 576px) and (max-width: 767px) {
+    .about-us-text-content5 {
+        width: 60%;
+        left: 1%;
+        top: 600px;
+        font-size: 14px;
+    }
+}
+
+/* Mobile (Portrait) (≤ 575px) */
+@media (max-width: 575px) {
+    .about-us-text-content5 {
+        width: 90%;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        font-size: 12px;
+        position: relative;
+        margin-top: 20px;
+        /* Adds space when stacked */
+    }
 }

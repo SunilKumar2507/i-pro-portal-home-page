@@ -56,7 +56,7 @@ const ContactUs = () => {
             <Header />
             <br />
             <br />
-            <div className="contact-header">
+            <div className="contact-headers">
                 <img src={contactImg} alt="Contact Illustration" className="contact-img" />
                 <div className="contact-form">
                     <h2>Questions? Drop us a line!</h2>

@@ -909,7 +909,7 @@ position: absolute;
         width: 100%;
         /* Keep it within the container */
         margin: auto;
-        top: 98vw;
+        top: 95vw;
     }
 }
 @media screen and (max-width: 1024px) {
@@ -921,7 +921,15 @@ position: absolute;
         margin: 2rem auto;
     }
 }
-
+@media screen and (max-width: 1240px) {
+    .heading {
+        position: relative;
+        top: 93vw;
+        left: auto;
+        width: 90%;
+        margin: 2rem auto;
+    }
+}
 @media screen and (max-width: 768px) {
     .heading {
         width: 80%;
@@ -959,6 +967,12 @@ position: absolute;
         grid-template-columns: repeat(4, 1fr);
         margin-top: 96vw;
         /* 3 columns */
+    }
+}
+
+@media screen and (max-width: 1240px) {
+    .grid-container {
+    margin-top: 93vw;
     }
 }
 /* Tablets (max-width 1024px) */
@@ -1059,6 +1073,12 @@ position: absolute;
         margin-left: 6%;
     }
 }
+
+@media screen and (max-width: 1240px) {
+    .articles-container {
+        margin-top: 115%;
+    }
+}
 @media screen and (max-width: 1350px) {
     .articles-container {
         grid-template-columns: repeat(3, 1fr);
@@ -1151,6 +1171,35 @@ position: absolute;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
+@media screen and (max-width: 1240px) {
+    .article-card {
+        width:90%;
+        position: relative;
+        left:-12%;
+        top:8vw
+    }
+}
+
+@media screen and (min-width: 1038px) and (max-width: 1390px) {
+    .article-card {
+     margin-top:-6vw;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .article-card {
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .article-card {
+    }
+}
+
+@media screen and (max-width: 495px) {
+    .article-card {
+    }
+}
 .image-placeholder {
     width: 100%;
     height: 150px;
@@ -1231,6 +1280,21 @@ position: absolute;
         max-width: 150px;
     }
 }
+@media screen and (max-width: 1240px) {
+        .insurance-container-landingpage {
+                max-width: 200%;
+                padding: 28px;
+                gap: 18px;
+                position: relative;
+                top:6vw;
+            }
+        
+            .insurance-logo {
+                max-width: 150px;
+            }
+        }
+    
+
 
 /* Medium-Large Screens (1024px - 1350px) */
 @media screen and (max-width: 1350px) {
@@ -1325,13 +1389,12 @@ position: absolute;
     object-fit: contain;
 }
 
-.testimonials-container {
+.testimonials-containers {
     position: absolute;
     width:100%;
-    top:380%;
+    margin-top:-30%;
     text-align: center;
-   
-    padding: 50px 20px;
+    
 }
 
 div h2 {
@@ -1401,89 +1464,14 @@ h3 {
     font-weight: bold;
     margin: 10px 0;
 }
-@media screen and (max-width: 1550px) {
-    .testimonials {
-        gap: 15px;
-        top: 10%;
-    }
-.testimonials-container {
-    top: 185vw;
-}
-    .card {
-        width: 280px;
-        padding: 15px;
-       
-    }
-}
 
-@media screen and (min-width: 1038px) and (max-width: 1350px) {
-    .testimonials {
-        flex-wrap: wrap;
-        justify-content: center;
-        top: 260%;
-    }
-
-    .testimonials-container{
-        top:225vw;
-    }
-
-    .card {
-        width: 260px;
-        padding: 15px;
-    }
-}
-
-@media screen and (max-width: 1024px) {
-    .testimonials {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    .testimonials-container {
-    top: 500vw;
-    }
-    .card {
-        width: 250px;
-        padding: 15px;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .testimonials {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .card {
-        width: 80%;
-        padding: 20px;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .testimonials-container {
-        padding: 30px 10px;
-    }
-
-    .card {
-        width: 90%;
-        padding: 15px;
-    }
-
-    h3 {
-        font-size: 18px;
-    }
-
-    div p {
-        font-size: 14px;
-    }
-}
 .help-container {
     position: fixed;
     bottom: 20px;
     left: 20px;
     z-index: 999;
 }
+
 
 .help-button {
     display: flex;
@@ -1552,6 +1540,13 @@ h3 {
     /* Apply blinking effect */
 }
 
+@media screen and (min-width: 1240px) {
+    .pos-button {
+       position: fixed;
+       Left:80%;
+       top:7vw;
+    }
+}
 .pos-button:hover {
     background-color: red;
     /* Darker blue on hover */
@@ -1647,4 +1642,76 @@ position: absolute;
         height: 30px;
         width: 150px;
         border-radius: 10px;
+}
+
+
+
+
+
+
+.testimonials-container {
+    text-align: center;
+    padding: 40px 20px;
+    width:100%;
+}
+
+.headingss {
+    font-size: 24px;
+    color: #1A237E;
+    font-weight: bold;
+}
+
+.subheading {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.testimonials-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.testimonial-card {
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #F8FBFD;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.profile-image img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+}
+
+.name span {
+    font-weight: normal;
+    color: #555;
+}
+
+.feedback {
+    font-size: 14px;
+    color: #444;
+    margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .testimonials-grid {
+        flex-direction: column;
+        align-items: center;
+    }
 }

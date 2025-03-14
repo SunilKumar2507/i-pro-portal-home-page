@@ -328,39 +328,47 @@ const Landingscreen = () => {
         </div>
 
             <div className="testimonials-container">
-                <h2>Feedback from Our Customers</h2>
-                <p>Trusted by many, i-Pro Infinity delivers exceptional insurance coverage.</p>
-                <div className="testimonials">
-                    <div className="card">
-                        <div className="image-circle yellow-bg">
-                            <img src="/images/john.png" alt="John D." />
+                <h2 className="headingss">Feedback from Our Customers</h2>
+                <p className="subheading">
+                    Trusted by many, i-Pro Infinity delivers exceptional insurance coverage.
+                </p>
+
+                <div className="testimonials-grid">
+                    <div className="testimonial-card">
+                        <div className="profile-image">
+                            <img src="https://via.placeholder.com/100" alt="John D." />
                         </div>
-                        <h3>John D., New York</h3>
-                        <p>I have been a i-pro healthInsurance customer for over five years now. Their plans are affordable, and the customer service is exceptional. I recently had a medical emergency, and the cashless treatment at one of their network hospitals made the process stress-free. Highly recommended!</p>
+                        <h3 className="name">John D., <span>New York</span></h3>
+                        <p className="feedback">
+                            "I have been an i-Pro HealthInsurance customer for over five years now. Their plans are
+                            affordable, and the customer service is exceptional. I recently had a medical emergency,
+                            and the cashless treatment at one of their network hospitals made the process stress-free.
+                            Highly recommended!"
+                        </p>
                     </div>
 
-                    <div className="card">
-                        <div className="image-circle grey-bg">
-                            <img src="/images/raj.png" alt="Raj P." />
+                    <div className="testimonial-card">
+                        <div className="profile-image">
+                            <img src="https://via.placeholder.com/100" alt="Raj P." />
                         </div>
-                        <h3>Raj P., Texas</h3>
-                        <p>"The flexibility of i-pro Health’s plans allowed me to tailor a policy that fits my family's needs perfectly. From preventive care to critical illness coverage, they have it all. The wellness programs are an added bonus that has helped us stay on top of our health."</p>
+                        <h3 className="name">Raj P., <span>Texas</span></h3>
+                        <p className="feedback">
+                            "The flexibility of i-Pro Health’s plans allowed me to tailor a policy that fits my
+                            family's needs perfectly. From preventive care to critical illness coverage, they have it
+                            all. The wellness programs are an added bonus that has helped us stay on top of our health."
+                        </p>
                     </div>
 
-                    <div className="card">
-                        <div className="image-circle blue-bg">
-                            <img src="/images/linda.png" alt="Linda S." />
+                    <div className="testimonial-card">
+                        <div className="profile-image">
+                            <img src="https://via.placeholder.com/100" alt="Linda S." />
                         </div>
-                        <h3>Linda S., Florida</h3>
-                        <p>I appreciate the transparency and clarity in i-pro health Insurance’s policy details. There are no hidden clauses, and everything is explained upfront. Filing a claim was quick and easy, with prompt settlement. I’m very satisfied with their service.</p>
-                    </div>
-
-                    <div className="card">
-                        <div className="image-circle blue-bg">
-                            <img src="/images/linda.png" alt="Linda S." />
-                        </div>
-                        <h3>Linda S., Florida</h3>
-                        <p>I appreciate the transparency and clarity in i-pro health Insurance’s policy details. There are no hidden clauses, and everything is explained upfront. Filing a claim was quick and easy, with prompt settlement. I’m very satisfied with their service.</p>
+                        <h3 className="name">Linda S., <span>Florida</span></h3>
+                        <p className="feedback">
+                            "I appreciate the transparency and clarity in i-Pro Health Insurance’s policy details. There
+                            are no hidden clauses, and everything is explained upfront. Filing a claim was quick and easy,
+                            with prompt settlement. I’m very satisfied with their service."
+                        </p>
                     </div>
                 </div>
             </div>
