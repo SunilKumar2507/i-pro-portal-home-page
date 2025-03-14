@@ -42,9 +42,9 @@ const OurServices = () => {
         }
     ];
     return (
-        
+
         <div className="services-containers">
-        <Header/>
+            <Header />
             <div className="services-content">
                 <h2 className="services-title">Our Services</h2>
                 <p className='service-content-paragraph'>
@@ -70,7 +70,7 @@ const OurServices = () => {
             <div className="services-image">
                 <img src={ourservicescreenimg} alt="Insurance Expert" />
             </div>
-            
+
             <div className="services-image2">
                 <img src={time24hrs} alt="Insurance Expert" />
             </div>
@@ -78,11 +78,11 @@ const OurServices = () => {
             <p className="highlighted-text2">
                 Personal  Insurance
             </p>
-              <br></br>
+            <br></br>
             <br></br>
             <p className="highlighted-text2-contents">At i-Pro  Insurance, we understand that your personal life is filled with unique and valuable assets that deserve the best protection. Our comprehensive personal insurance solutions are designed to safeguard your home, vehicle, health, and financial well-being, ensuring you can enjoy peace of mind in every aspect of your life.</p>
-           
-           
+
+
             <p className="highlighted-text3">
                 Corporate Insurance
             </p>
@@ -97,8 +97,8 @@ const OurServices = () => {
             </p>
 
             <p className="highlighted-text4-content">The world of insurance is complex and everchanging. The insurance covers provided by the policy you bought last year may no longer be suitable or sufficient for your needs. You may not know that the quoted premiums are competitive? And if you are just starting out or expanding your business, how do you know what types of insurance you need? And if the insurance you buy is good enough to protect your business against the risk exposures? A well experienced and suitably qualified professional can help assess and source the types and levels of cover that you need, saving you the trouble and effort. The consequences of not having the right insurance in place can be disastrous, and sometimes this only comes to light when you need to make a claim, which might be too late.</p>
-            
-        
+
+
             <div className="business-container">
                 <h2 className="business-title">WE UNDERSTAND YOUR BUSINESS</h2>
                 <div className="business-cards">

@@ -36,8 +36,8 @@ const Landingscreen = () => {
 
     const openInNewTab = (url) => {
         window.open(url, "_blank"); // Opens in a new tab
-        
-    
+
+
     };
 
     const [isOpen, setIsOpen] = useState(false);
@@ -58,7 +58,7 @@ const Landingscreen = () => {
         { src: tataaia, alt: 'TATA AIA' },
         { src: hdfclife, alt: 'HDFC Life' }
     ];
-    
+
 
     const styles = {
         container: {
@@ -92,12 +92,12 @@ const Landingscreen = () => {
     };
 
 
-    
 
-    return(
+
+    return (
         <div className="container">
             <Header />
-        
+
             <div class="curved-text">
                 <svg width="500" height="200">
                     <path id="curvePath" d="M20,190 Q350,130 470,210" fill="transparent" />
@@ -110,50 +110,50 @@ const Landingscreen = () => {
             </div>
 
 
-        
-         <div className="insurance-image">
-                <img src={insuranceimage} alt="insurance-image" className="insurance-img"/>
-                
-         </div>
 
-         <div className="two-wheeler">
-           <img src={twowheelers} alt="two -wheeler" className="twowheeler-img"/>
+            <div className="insurance-image">
+                <img src={insuranceimage} alt="insurance-image" className="insurance-img" />
+
+            </div>
+
+            <div className="two-wheeler">
+                <img src={twowheelers} alt="two -wheeler" className="twowheeler-img" />
                 <button class="vehicle-btn-bike" onClick={() => openInNewTab("https://uatweb.iproinfinity.com/two-wheeler-insurance/#/")}>Two-Wheeler</button>
-                
-         </div>
 
-         <div className="car">
-         <img src={car} alt="car" className="car-img"/>
+            </div>
+
+            <div className="car">
+                <img src={car} alt="car" className="car-img" />
                 <button className="vehicle-btn-car" onClick={() => openInNewTab("https://uatweb.iproinfinity.com/car-insurance/#/")}>
                     Car
                 </button>
-         </div>
+            </div>
 
-        <div className="school-vehicle">
-         <img src={schoolvehicle} alt="school-vehicle" className="school-vehicle-img"/>
+            <div className="school-vehicle">
+                <img src={schoolvehicle} alt="school-vehicle" className="school-vehicle-img" />
                 <button class="vehicle-btn-cv" onClick={() => openInNewTab("https://uatweb.iproinfinity.com/commercial-vehicle-insurance/#/")}>Commercial Vehicle</button>
-        </div>
-
-          
+            </div>
 
 
-        <div className="doctors">
-            <img src={doctors} alt="doctors" className="doctors-img"/>
+
+
+            <div className="doctors">
+                <img src={doctors} alt="doctors" className="doctors-img" />
                 <button class="vehicle-btn-health" onClick={() => openInNewTab("https://uatweb.iproinfinity.com/health-insurance/#/")}>Health</button>
-        </div>
+            </div>
             <div className='text2'><strong>Why choose i-Pro Infinity?</strong></div>
-            
-            <div className='text3'><p>Why choose i-Pro Infinity? Because it offers reliable protection with advanced technology, ensuring your safety at all times.Its user-friendly design makes it easy to set up and use,
-             providing a hassle-free experience. With 24/7 support, you can count on us whenever you need assistance.
-              Most importantly, i-Pro Infinity gives you peace of mind, knowing that you're 
-              always covered. Choose i-Pro Infinity for a safer, worry-free life.</p></div>
 
-              <div className="background-color">
-              
+            <div className='text3'><p>Why choose i-Pro Infinity? Because it offers reliable protection with advanced technology, ensuring your safety at all times.Its user-friendly design makes it easy to set up and use,
+                providing a hassle-free experience. With 24/7 support, you can count on us whenever you need assistance.
+                Most importantly, i-Pro Infinity gives you peace of mind, knowing that you're
+                always covered. Choose i-Pro Infinity for a safer, worry-free life.</p></div>
+
+            <div className="background-color">
+
                 <div style={styles.grid}>
                     <div style={styles.card}>
                         <h3>Reliable Protection</h3>
-                        <img src={security} className="security"/>
+                        <img src={security} className="security" />
                         <p>
                             Trust in our advanced technology to keep you safe. Our state-of-the-art
                             systems are designed to detect and respond to threats instantly,
@@ -207,7 +207,7 @@ const Landingscreen = () => {
                         </p>
                     </div>
                 </div>
-              </div>
+            </div>
             <div className="landing-container">
                 <h2 className="heading">Our exclusive offers. Just for you.</h2>
                 <div className="grid-container">
@@ -257,7 +257,7 @@ const Landingscreen = () => {
             <div className="articles-container">
                 <div className="article-card">
                     <div className="image-placeholder">
-                        <img src={landingimage1} className="landingimage1"/>
+                        <img src={landingimage1} className="landingimage1" />
                     </div>
                     <div className="content">
                         <h3>The Importance of Financial Wellness Programs for Employee Productivity</h3>
@@ -279,7 +279,7 @@ const Landingscreen = () => {
                     <div className="image-placeholder">
                         <div className="image-placeholder">
                             <img src={landingimage2} className="landingimage2" />
-                        </div>  
+                        </div>
                     </div>
                     <div className="content">
                         <h3>Choosing the Right Insurance Plan: A Guide for Employers</h3>
@@ -320,12 +320,12 @@ const Landingscreen = () => {
                 </div>
             </div>
             <div className="insurance-container-landingpage">
-            {logos.map((logo, index) => (
-                <div key={index} className="logo-box">
-                    <img src={logo.src} alt={logo.alt} className="insurance-logo" />
-                </div>
-            ))}
-        </div>
+                {logos.map((logo, index) => (
+                    <div key={index} className="logo-box">
+                        <img src={logo.src} alt={logo.alt} className="insurance-logo" />
+                    </div>
+                ))}
+            </div>
 
             <div className="testimonials-container">
                 <h2 className="headingss">Feedback from Our Customers</h2>
@@ -408,7 +408,7 @@ const Landingscreen = () => {
                     </div>
                 )}
             </div>
-            </div>
+        </div>
     );
 }
 

@@ -40,11 +40,11 @@ const AboutIPro = () => {
                         A Mechanical Engineer, ventured into insurance sector as a Direct Recruit Officer with M/s. United India Insurance Company, and then on to Overseas Market in Oman and UK. Has more than three decades of experience, handling large corporates as an insurer, reinsurer, insurance broker, and risk manager and across all lines of business and functions – Underwriting, Claims, Reinsurance and Risk Engineering.
                     </p>
                 </div>
-                
+
 
                 <div className="about-us-text-content4">
                     <div className="about-us-heading4">MR. UMESH KADARMANDALGI
-                       <br></br>
+                        <br></br>
                         EXECUTIVE DIRECTOR</div>
                     <br></br>
                     <br></br>
@@ -73,6 +73,6 @@ const AboutIPro = () => {
 };
 
 
-<div>guytsgh</div>
+
 
 export default AboutIPro;

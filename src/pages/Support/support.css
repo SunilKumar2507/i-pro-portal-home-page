@@ -74,17 +74,18 @@
 }
 
 
-.calling{
-width:50%;
+.calling {
+    width: 50%;
 }
 
-.emailimage{
-width: 70%;
+.emailimage {
+    width: 70%;
 }
 
-.addresss{
-width: 50%;
+.addresss {
+    width: 50%;
 }
+
 .info-card img {
     width: 50px;
     height: 60px;
@@ -113,9 +114,9 @@ width: 50%;
     }
 }
 
-@media (max-width: 1240px){
+@media (max-width: 1240px) {
     .contact-img {
-        width:40%
+        width: 40%
     }
 }
 

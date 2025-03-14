@@ -80,16 +80,17 @@
     border-radius: 8px;
 }
 
-.about-us-heading2{
+.about-us-heading2 {
     font-size: 26px;
-        font-weight: bold;
-        color: blue;
+    font-weight: bold;
+    color: blue;
 }
 
 .about-us-description2 {
     font-size: 20px;
     line-height: 1.5;
 }
+
 /* Large Laptops & Desktops (1200px and above) */
 @media (min-width: 1200px) {
     .about-us-text-content2 {
@@ -137,25 +138,26 @@
 
 .about-us-text-content3 {
     width: 45%;
-        text-align: left;
-        margin-top: 20vw;
-        padding: 20px;
-        background-color: #f8f9fa;
-        color: #333;
+    text-align: left;
+    margin-top: 20vw;
+    padding: 20px;
+    background-color: #f8f9fa;
+    color: #333;
 
     /* Ensures it's below content2 */
 }
 
-.about-us-heading3{
+.about-us-heading3 {
     font-size: 26px;
-        font-weight: bold;
-        color: blue;
+    font-weight: bold;
+    color: blue;
 }
 
 .about-us-description3 {
     font-size: 20px;
     line-height: 1.5;
 }
+
 /* Large Laptops & Desktops (≥1200px) */
 @media (min-width: 1200px) {
     .about-us-text-content3 {

@@ -40,7 +40,7 @@ const Header = () => {
                 About Us
               </NavLink>
             </li>
-           
+
             <li className="nav-items">
               <NavLink to="/contact-us" className="navbar-link" onClick={() => setOpenMenu(false)}>Support</NavLink>
             </li>
