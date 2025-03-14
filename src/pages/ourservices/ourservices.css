@@ -153,8 +153,8 @@ width: 60%;
     color: #2F3BA5;
         font-weight: bold;
         font-size: 18px;
-        margin-top: 4vw;
-      
+        margin-top: 6vw;
+      margin-right: 20%;
 
 }
 
@@ -163,7 +163,7 @@ width: 60%;
         width: 60%;
         max-width: 800px;
         margin-left: 40%;
-        margin-top: -38%;
+        margin-top: -36%;
 }
 
 /* Responsive Styling */
@@ -200,11 +200,7 @@ width: 60%;
     }
 }
 
-.services-image4 {
-    width: 60%;
-    max-width: 400px;
-    margin-top: 10vw;
-}
+
 
 
 .business-cards {
