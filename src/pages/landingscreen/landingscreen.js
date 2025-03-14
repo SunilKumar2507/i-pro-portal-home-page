@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "../../components/header/header";
 import insuranceimage from "../../images/landingpageinsrance image.jpg";
 import twowheelers from "../../images/two wheeler.gif";
@@ -39,6 +39,8 @@ const Landingscreen = () => {
         
     
     };
+
+    const [isOpen, setIsOpen] = useState(false);
 
     const logos = [
         { src: bajaj, alt: 'Bajaj Allianz' },
@@ -374,6 +376,29 @@ const Landingscreen = () => {
                         <p>Need Help?</p>
                     </div>
                 </a>
+            </div>
+
+            <div>
+                {/* POS Button */}
+                <button className="pos-button" onClick={() => setIsOpen(true)}>
+                    POS
+                </button>
+
+                {/* Modal Popup */}
+                {isOpen && (
+                    <div className="modal-overlay" onClick={() => setIsOpen(false)}>
+                        <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+                            <button className="close-button" onClick={() => setIsOpen(false)}>✖</button>
+                            <h2>Point of Sale</h2>
+                            <input className="Name" type="text" placeholder="Name" />
+                            <input className="Ph-no" type="text" placeholder="Phone Number" />
+                            <input className="city" type="text" placeholder="City" />
+                            <textarea className="description" placeholder="Description"></textarea>
+                            <input className="email" type="email" placeholder="Email" />
+                            <button className="sumbit" type="submit">Submit</button>
+                        </div>
+                    </div>
+                )}
             </div>
             </div>
     );
