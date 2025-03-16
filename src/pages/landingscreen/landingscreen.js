@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Header from "../../components/header/header";
 import insuranceimage from "../../images/landingpageinsrance image.jpg";
 import twowheelers from "../../images/two wheeler.gif";
@@ -29,6 +29,8 @@ import support from '../../../src/images/support.png';
 import peaceofmind from '../../../src/images/peaceofmind.png';
 import instant from '../../../src/images/instants.jpg';
 import assist from '../../../src/images/assist.jpg';
+import axios from "axios";
+
 
 import './landingscreen.css';
 
@@ -40,7 +42,69 @@ const Landingscreen = () => {
 
     };
 
+    const [formData, setFormData] = useState({
+        name: "",
+        phno: "",
+        city: "",
+        email: "",
+        description: "",
+    });
+
+    const [filteredData, setFilteredData] = useState([]);
+    const [allData, setAllData] = useState([]);
     const [isOpen, setIsOpen] = useState(false);
+
+    // Handle Input Change
+    const handleChange = (e) => {
+        setFormData({ ...formData, [e.target.name]: e.target.value });
+    };
+
+    // Fetch all data when modal opens
+    const fetchData = async () => {
+        try {
+            const response = await axios.get("http://localhost:3002/api/getData");
+            if (response.status === 200) {
+                setAllData(response.data);
+            }
+        } catch (error) {
+            console.error("Error fetching data:", error);
+        }
+    };
+
+    // Open modal and fetch data
+    const openModal = () => {
+        setIsOpen(true);
+        fetchData();
+    };
+
+    // Filter data when city changes
+    useEffect(() => {
+        if (formData.city) {
+            const filtered = allData.filter((item) =>
+                item.city.toLowerCase().includes(formData.city.toLowerCase())
+            );
+            setFilteredData(filtered);
+        } else {
+            setFilteredData([]);
+        }
+    }, [formData.city, allData]);
+
+    // Handle Form Submission
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        try {
+            const response = await axios.post("http://localhost:3002/api/save", formData);
+            if (response.status === 200) {
+                alert("Data saved successfully! ✅");
+                setIsOpen(false);
+                setFormData({ name: "", phno: "", city: "", email: "", description: "" });
+                fetchData(); // Refresh data after submission
+            }
+        } catch (error) {
+            console.error("Error submitting form:", error);
+            alert("Error saving data. Please try again ❌");
+        }
+    };
 
     const logos = [
         { src: bajaj, alt: 'Bajaj Allianz' },
@@ -398,14 +462,44 @@ const Landingscreen = () => {
                         <div className="modal-content" onClick={(e) => e.stopPropagation()}>
                             <button className="close-button" onClick={() => setIsOpen(false)}>✖</button>
                             <h2>Point of Sale</h2>
-                            <input className="Name" type="text" placeholder="Name" />
-                            <input className="Ph-no" type="text" placeholder="Phone Number" />
-                            <input className="city" type="text" placeholder="City" />
-                            <textarea className="description" placeholder="Description"></textarea>
-                            <input className="email" type="email" placeholder="Email" />
-                            <button className="sumbit" type="submit">Submit</button>
+
+                            {/* Input Fields */}
+                            <input className="Name" type="text" name="name" placeholder="Name" value={formData.name} onChange={handleChange} />
+                            <input className="Ph-no" type="text" name="phno" placeholder="Phone Number" value={formData.phno} onChange={handleChange} />
+                            <input className="city" type="text" name="city" placeholder="City" value={formData.city} onChange={handleChange} />
+                            <textarea className="description" name="description" placeholder="Description" value={formData.description} onChange={handleChange}></textarea>
+                            <input className="email" type="email" name="email" placeholder="Email" value={formData.email} onChange={handleChange} />
+
+                            <button className="submit" type="submit" onClick={handleSubmit}>Submit</button>
+                            {filteredData.length > 0 && (
+                                <div className="data-table">
+                                    <h3>Filtered Records for {formData.city}</h3>
+                                    <table border="1">
+                                        <thead>
+                                            <tr>
+                                                <th>Name</th>
+                                                <th>City</th>
+                                                <th>Phone Number</th>
+                                                <th>Email</th>
+                                                <th>Description</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            {filteredData.map((item, index) => (
+                                                <tr key={index}>
+                                                    <td>{item.name}</td>
+                                                    <td>{item.city}</td>
+                                                    <td>{item.phno}</td>
+                                                    <td>{item.email}</td>
+                                                    <td>{item.description}</td>
+                                                </tr>
+                                            ))}
+                                        </tbody>
+                                    </table>
+                                </div>
+                            )}
                         </div>
-                    </div>
+                        </div>
                 )}
             </div>
         </div>

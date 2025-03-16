@@ -1629,48 +1629,48 @@ h3 {
 
 .Name {
     position: absolute;
-    margin-top: 1%;
+    margin-top: 3%;
     height: 30px;
     left: 10%;
-    width: 150px;
-    border-radius: 10px;
+    width: 200px;
+    border-radius: 5px;
 
 }
 
 .Ph-no {
     position: absolute;
-    margin-top: 1%;
+    margin-top: 3%;
     left: 40%;
     height: 30px;
-    width: 150px;
-    border-radius: 10px;
+    width: 200px;
+    border-radius: 5px;
 }
 
 .city {
     position: absolute;
-    margin-top: 1%;
+    margin-top: 3%;
     left: 70%;
     height: 30px;
-    width: 150px;
-    border-radius: 10px;
+    width: 200px;
+    border-radius: 5px;
 }
 
 .description {
     position: absolute;
     margin-top: 10%;
     left: 10%;
-    height: 50px;
-    width: 250px;
-    border-radius: 10px;
+    height: 80px;
+    width: 450px;
+    border-radius: 5px;
 }
 
 .email {
     position: absolute;
-    top: 50%;
+    top: 48%;
     left: 70%;
     height: 30px;
-    width: 150px;
-    border-radius: 10px;
+    width: 200px;
+    border-radius: 5px;
 }
 
 
@@ -1737,6 +1737,16 @@ h3 {
     margin-top: 10px;
 }
 
+.submit{
+    position: relative;
+    top:40%;
+    width:300px;
+}
+
+.close-button{
+    position: absolute;
+    left:87%;
+}
 /* Responsive Design */
 @media (max-width: 768px) {
     .testimonials-grid {
